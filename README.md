@@ -31,6 +31,13 @@ Ctrl+p+q
 > docker tag [IMAGE_ID] [DockerHubAccountName/IMAGE_NAME:버전라벨]
 > docker tag 4a6760db613f admin/echo:latest
 ```
+* Image에서 컨테이너 기동
+```
+> docker run -it [IMAGE_NAME] /bin/bash
+> docker run -it -p 8080:80 [IMAGE_NAME] /bin/bash
+> docker run -it --name [CONTAINER_NAME] [IMAGE_NAME] /bin/bash
+```
+
 * Docker 컨테이너 기동
 ```
 docker start [OPTION] CONTAINER [CONTAINER...]
@@ -43,6 +50,10 @@ docker start [OPTION] CONTAINER [CONTAINER...]
   ```
   docker start -i ariari
   ```
+* Docker Image 삭제
+```
+docker rmi [IMAGE_ID]
+```
 
 ### DockerFile
 * DockerFile
