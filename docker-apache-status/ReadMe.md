@@ -98,7 +98,6 @@ PharosControlServlet::doPost
 RealtimeCommand::execute
 OverviewBean::execute
 
-
 OverviewBean::execute=>OverviewBean::getApacheOverview=>ApacheAgent::getRealtimeXML=>ApacheStatus::toXML
 
 ## Apache Module
@@ -106,6 +105,13 @@ OverviewBean::execute=>OverviewBean::getApacheOverview=>ApacheAgent::getRealtime
 참조: http://think-t.hatenablog.com/entry/20101002/1285999147
 참조: https://www.adminweb.jp/apache/status/index1.html
 참조: https://torina.top/detail/211/
+참조: https://www.softel.co.jp/blogs/tech/archives/4230
+참조: http://software.fujitsu.com/jp/manual/manualfiles/M060041/B1WN7141/02Z200/ihs02/ihs00014.htm
+
+내용: Apache2
+참조: https://www.digitalocean.com/community/questions/unable-to-get-server-status-mod-working-with-apache2-on-ubuntu
+참조: https://www.tecmint.com/check-apache-httpd-status-and-uptime-in-linux/
+참조: https://askubuntu.com/questions/256013/apache-error-could-not-reliably-determine-the-servers-fully-qualified-domain-n/396048
 
 내용:
 참조: https://qiita.com/setouchi/items/6bfa116fc5a266856177
@@ -113,3 +119,9 @@ OverviewBean::execute=>OverviewBean::getApacheOverview=>ApacheAgent::getRealtime
 내용:
 참조: https://httpd.apache.org/docs/2.4/ja/mod/mod_status.html
 참조: https://qiita.com/macer_fkm/items/dda5e343e19c432a1ccd
+
+내용: ScoredBoard 모니터링
+참조: https://aoishi.hateblo.jp/entry/2018/01/07/080000
+
+내용: nginx 서버정보
+참조: https://www.cyberciti.biz/faq/howto-unix-linux-convert-dos-newlines-cr-lf-unix-text-format/
