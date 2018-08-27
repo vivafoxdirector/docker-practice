@@ -17,6 +17,10 @@
 *아래의 설정방법은 Docker Image(vivafoxdirector/apache-status)에 포함되어 있고,
 Image를 docker pull 하고 컨테이너만 생성하면 기본적인 설정은 되어 있다.*
 
+#### Apache 버전확인
+```
+> httpd -v
+```
 #### Apache 설치
 ```
 > yum -y install httpd
@@ -47,8 +51,13 @@ LoadModule status_module modules/mod_status.so
 
 #### Apache 재기동
 ```
+# CentOS
 > systemctl status httpd
 > systemctl restart httpd
+
+# Other Linux
+> service httpd start
+> service httpd stop
 ```
 #### Apache Status 확인
 ##### 기본 정보 확인

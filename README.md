@@ -1,11 +1,20 @@
 # Docker-practice
 
 ### Command
+* Docker Container 실행
+```
+> docker run [OPTION] [--name {CONTAINER_NAME}] {IMAGE_NAME} [PARAMETER]
+> docker run -it --name ubuntu_container ubuntu /bin/bash
+```
+
 * 기동중인 Docker Container 에 접속
 ```
 > docker exec -i -t [CONTAINER_ID(NAME)] /bin/bash
 > docker exec -it [CONTAINER_ID(NAME)] /bin/bash
 ```
+-i: STDOUT 상태로 할경우 사용한다.
+-t: tty사용으로 컬러 콘솔을 사용한다.
+
 * 기동중인 Docker Container 끝내지 않고 나오기
 ```
 > docker exec -it [CONTAINER_ID(NAME)] /bin/bash
