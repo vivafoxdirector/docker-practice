@@ -93,6 +93,11 @@ CMD echo "now running..."
 > docker run -p 8080:80 -d foxdirector/httpd
 ```
 
+#### alpine
+* 컨테이너 생성
+```
+> docker run --it <container name> <imagename> /bin/ash
+```
 ### List all exited docker container
 
 #### Start and attache exited docker container
