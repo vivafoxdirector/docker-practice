@@ -69,6 +69,10 @@ wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/p/python-paramiko-2.
 > yum -y install ansible
 
 
+> sudo docker run -it --name centos-tomcat -p 8080:8080 centos:tomcat
+> http://192.168.245.128:8080/
+
+
 ```
 
 ### 참조

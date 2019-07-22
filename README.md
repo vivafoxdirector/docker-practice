@@ -20,6 +20,11 @@
 > docker exec -it [CONTAINER_ID(NAME)] /bin/bash
 Ctrl+p+q
 ```
+* Docker 컨테이너 정보 확인
+```
+> docker inspect [CONTAINER_ID]
+```
+
 * Docker Hub 로그인
 ```
 > docker login
