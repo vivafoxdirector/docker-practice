@@ -29,11 +29,15 @@ Group root (이부분은 apache 로 해야할듯)
 
 * 트러블슈팅
 1. service httpd start 오류
+```
 > service httpd start
 > httpd (을)를 시작 중: httpd: bad user name apache [실패]
+```
 
-2. apachectl status 명령어
+1. apachectl status 명령어
+```
 > apachectl status
+```
 The 'links' package is required for this functionality.
 위의 오류가 나서 
 http://www.square-mi.com/wp/category/webserver/apache/
