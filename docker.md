@@ -167,39 +167,41 @@ RUN echo "now building..."
 CMD echo "now running..."
 ```
 * DockerFile build
-```
-> docker build -t [USER_NAME]/[IMAGE_NAME] .
-> docker build -t admin/echo .
+```s
+$> docker build -t [IMAGE_NAME] .
+$> docker build -t centos .
+$> docker build -t [USER_NAME]/[IMAGE_NAME] .
+$> docker build -t admin/echo .
 ```
 
 ### practice
 #### docker-httpd
 * 빌드
-```
-> docker build -t foxdirector/httpd .
+```s
+$> docker build -t foxdirector/httpd .
 ```
 * 실행
-```
-> docker run -p 8080:80 -d foxdirector/httpd
+```s
+$> docker run -p 8080:80 -d foxdirector/httpd
 ```
 
 #### alpine
 * 컨테이너 생성
-```
-> docker run --it <container name> <imagename> /bin/ash
+```s
+$> docker run --it <container name> <imagename> /bin/ash
 ```
 ### List all exited docker container
 
 #### Start and attache exited docker container
-```
-> docker start <container_ID>
-> docker ps
-> docker attach <container_ID>
+```s
+$> docker start <container_ID>
+$> docker ps
+$> docker attach <container_ID>
 ```
 #### Start exited container with docker start command
-```
-> docker ps -f "status=exited"
-> docker start -a <container_ID>
+```s
+$> docker ps -f "status=exited"
+$> docker start -a <container_ID>
 ```
 
 ## ref
