@@ -25,6 +25,14 @@ $> sudo sh -c '(echo "#!/usr/bin/env sh" && curl -L https://github.com/com-lihao
 $> docker pull hseeberger/scala-sbt:8u222_1.3.5_2.13.1
 $> docker run -it --rm hseeberger/scala-sbt:8u222_1.3.5_2.13.1
 ```
-
+2. Ammonite설치
+```s
+$> sudo sh -c '(echo "#!/usr/bin/env sh" && curl -L https://github.com/com-lihaoyi/Ammonite/releases/download/2.3.8/2.13-2.3.8) > /usr/local/bin/amm && chmod +x /usr/local/bin/amm' && amm
+```
+3. OhMyZsh 설치
+```s
+$> apt-get install zsh
+$> sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 # 참조사이트
 - [hseeberger/scala-sbt](https://hub.docker.com/r/hseeberger/scala-sbt/)
