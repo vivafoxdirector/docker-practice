@@ -23,7 +23,9 @@ $> sudo sh -c '(echo "#!/usr/bin/env sh" && curl -L https://github.com/com-lihao
 1. 이미지 가져오기 및 컨테이너 기동
 ```s
 $> docker pull hseeberger/scala-sbt:8u222_1.3.5_2.13.1
-$> docker run -it --rm hseeberger/scala-sbt:8u222_1.3.5_2.13.1
+
+#$> docker run -it --rm hseeberger/scala-sbt:8u222_1.3.5_2.13.1
+$> docker run -ti --name java-scala hseeberger/scala-sbt:8u222_1.3.5_2.13.1 /bin/bash
 ```
 2. Ammonite설치
 ```s
