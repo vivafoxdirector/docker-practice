@@ -30,4 +30,4 @@ RUN \
 CMD ["/bin/zsh"]
 
 # Execute
-# $> docker build -t yian-dev:scala .
+# $> docker build -t yian-dev:scala2.13 .

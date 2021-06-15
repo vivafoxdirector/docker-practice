@@ -13,7 +13,8 @@ $> docker run -ti --name java-scala java-scala /bin/bash
 ```
 2. Ammonite설치
 ```s
-$> sudo sh -c '(echo "#!/usr/bin/env sh" && curl -L https://github.com/com-lihaoyi/Ammonite/releases/download/2.3.8/2.13-2.3.8) > /usr/local/bin/amm && chmod +x /usr/local/bin/amm' && amm
+$> sudo sh -c '(echo "#!/usr/bin/env sh" && curl -L https://github.com/com-lihaoyi/Ammonite/releases/download/2.4.0/2.13-2.4.0) > /usr/local/bin/amm && chmod +x /usr/local/bin/amm' && amm
+
 ```
 
 # Scala 참조사이트 이용
