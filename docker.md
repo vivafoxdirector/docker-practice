@@ -320,6 +320,7 @@ file: /AGENT_TP_TEST.jmx 을 아래와 같이 수정한다.
 4) JMeter Start 버튼 클릭
 
 # 참고사이트
+## Docker 기본
 1. Docker
 - [Install Docker on CentOS 7](https://qiita.com/ymasaoka/items/b6c3ffea060bcd237478)
 - [Installing Docker on CentOS 8](https://www.vadmin-land.com/2019/09/installing-docker-on-centos-8/)
@@ -335,3 +336,7 @@ file: /AGENT_TP_TEST.jmx 을 아래와 같이 수정한다.
 3. Redis
 - [redis-cli コマンド操作まとめ](https://qiita.com/rubytomato@github/items/d66d932959d596876ab5)
 - [Docker compose ことはじめハンズオン](https://qiita.com/TsutomuNakamura/items/7e90e5efb36601c5bc8a)
+
+## Docker 개념
+1. windows containers vs linux containers
+- [[Windows 컨테이너] 1: Windows 컨테이너에 대한 이해](https://tech.devsisters.com/posts/intro-windows-container/)
