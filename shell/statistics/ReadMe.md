@@ -24,7 +24,7 @@ $> docker-compose up -d
 # 다시 실행할 경우
 $> docker-compose start
 
-# 중지
+# **중지
 $> docker-compose stop
 
 # **Docker 전체 삭제
