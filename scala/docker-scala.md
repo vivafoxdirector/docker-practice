@@ -30,6 +30,10 @@ $> docker run -ti --name yian-scala hseeberger/scala-sbt:8u222_1.3.5_2.13.1 /bin
 ```
 2. Ammonite설치
 ```s
+# latest
+$> sudo sh -c '(echo "#!/usr/bin/env sh" && curl -L https://github.com/com-lihaoyi/Ammonite/releases/download/2.4.0/2.13-2.4.0-23-76673f7f) > /usr/local/bin/amm && chmod +x /usr/local/bin/amm'
+
+# old
 $> sudo sh -c '(echo "#!/usr/bin/env sh" && curl -L https://github.com/com-lihaoyi/Ammonite/releases/download/2.3.8/2.13-2.3.8) > /usr/local/bin/amm && chmod +x /usr/local/bin/amm' && amm
 ```
 3. OhMyZsh 설치

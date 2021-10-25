@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  shell:
+    build: ./docker   # docker directory Dockerfile
+    #container_name: helloworld
+    #restart: always
+    tty: true
+    volumes:
+      - ./shell:/usr/src:cached
