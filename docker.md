@@ -344,3 +344,8 @@ file: /AGENT_TP_TEST.jmx 을 아래와 같이 수정한다.
 ## TipTech
 1. docker-compose command 과 dockerfile cmd 어느게 우선하나? docker-compose command가 최 우선이다.
 - [DockerfileのCMD、docker-compose.yamlのcommandに、複数コマンドを複数行で書く](https://miuuuu.hatenablog.com/entry/2020/03/21/013627)
+
+2. Mysql 문자셋 설정
+- [dockerのMySQLのutf8文字コードのイメージを作る](https://daichan.club/docker/78379)
+  - [윈도우 환경에서 MySQL 한글 설정하기(UTF-8)](https://happy-inside.tistory.com/112)
+  - [예제] yian/docker-practice/shell/helloworld/docker/Dockerfile/mysqld_charset.cnf

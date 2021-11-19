@@ -12,6 +12,9 @@ RUN \
 # WORK DIR
 WORKDIR /usr/src
 
+# mysql charset 설정
+COPY mysqld_charset.cnf /etc/mysql/conf.d/mysqld_charset.cnf
+
 # CMD
 ## Dosfile to UnixFile (한글관련 처리시 필요)
 # RUN dos2unix /usr/src/helloworld.sh
