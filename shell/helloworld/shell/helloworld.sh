@@ -1,7 +1,12 @@
 #!/bin/bash
 
 # MySQL START
-service mysql start
+# `service mysql start`
 
-mkdir output
-echo "Hello World" >> ./output/result.txt
+# CREATE OUTPUT DIR
+if [ ! -d "output" ]
+then
+    `mkdir output`
+fi
+
+echo "Hello World" > "./output/result.txt"

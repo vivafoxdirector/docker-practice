@@ -12,7 +12,7 @@ RUN \
 WORKDIR /usr/src
 
 # CMD
-CMD  ["/usr/src/OFEC_MVL_STAT.sh"]
+CMD ["/usr/src/OFEC_MVL_STAT.sh"]
 
 # TEMP
 #COPY helloworld.sh /root

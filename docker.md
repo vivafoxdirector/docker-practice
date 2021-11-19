@@ -340,3 +340,7 @@ file: /AGENT_TP_TEST.jmx 을 아래와 같이 수정한다.
 ## Docker 개념
 1. windows containers vs linux containers
 - [[Windows 컨테이너] 1: Windows 컨테이너에 대한 이해](https://tech.devsisters.com/posts/intro-windows-container/)
+
+## TipTech
+1. docker-compose command 과 dockerfile cmd 어느게 우선하나? docker-compose command가 최 우선이다.
+- [DockerfileのCMD、docker-compose.yamlのcommandに、複数コマンドを複数行で書く](https://miuuuu.hatenablog.com/entry/2020/03/21/013627)
