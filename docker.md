@@ -419,3 +419,8 @@ file: /AGENT_TP_TEST.jmx 을 아래와 같이 수정한다.
 - [dockerのMySQLのutf8文字コードのイメージを作る](https://daichan.club/docker/78379)
   - [윈도우 환경에서 MySQL 한글 설정하기(UTF-8)](https://happy-inside.tistory.com/112)
   - [예제] yian/docker-practice/shell/helloworld/docker/Dockerfile/mysqld_charset.cnf
+
+
+## 트러블슈팅(20230405)
+1. Docker-compose build 시 "no such file or directory"발생시 댕으
+- [[Docker/Python]Could not open requirements file: [Errno 2] No such file or directory: でDocker buildに失敗したときの対処法](http://pixelbeat.jp/could-not-open-requirements-file-with-docker-using-python/)
