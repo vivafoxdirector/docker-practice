@@ -5,5 +5,6 @@ services:
     #container_name: helloworld
     #restart: always
     tty: true
+    # command: dos2unix /usr/src/helloworld.sh
     volumes:
       - ./shell:/usr/src:cached

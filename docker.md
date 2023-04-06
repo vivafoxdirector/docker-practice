@@ -160,6 +160,76 @@ docker rmi [IMAGE_ID]
 $ sudo docker ps
 $ sudo docker cp <컨테이너ID>:/etc/my.cnf my.cnf
 ```
+## Docker Compose
+# 실행방법
+
+## Docker 설치
+1. Windows 버전 설치
+- [Docker Desktop](https://www.docker.com/products/docker-desktop)
+
+2. [실행] 명령어 실행하면 자동으로 docker-compose 설치될 것임.
+
+## 디렉구조
+```
+├── docker
+│   └── Dockerfile              => [Docker설정파일]
+├── shell
+│    ├── output                 => 런타임중에 생성되는 디렉토리이고, 쉘의 결과물이 출력된다.
+│    ├── 1020.sh                => 10월 20일 요청받은 '클래스 개설 실적'통계 쉘이다.
+│    └── OFEC_MVL_STAT.sh       => 실제 도커내에서 실행되는 쉘 (상황에 맞게 수정한다.)
+└── docker-compose.yml          => [Docker설정파일]
+```
+
+## 수정항목
+1. shell
+shell디렉토리에 작업할 shell파일을 위치 시킨다. (예제는 화상통계를 하는 OFEC_MVL_STAT.sh 이다.)
+
+2. Dockerfile
+Dockerfile 내에 지정된 쉘 파일명을 하나만 지정한다.
+
+2. 
+## 실행
+1. 쉘은 내부적으로 MySQL 을 이용하고, EBS DB에 연결하기 때문에 "DBSAFER"가 구동되어 있어야 함.
+
+2. 실행 명령어
+문구앞에 '**'붙은거만 주로 사용함
+```sh
+# 1. Dockerfile 수정
+# /docker/Dockerfile 수정한다.(실행하고자 하는 쉘로 구동되도록)
+
+$> cd statistics
+
+# **Docker 빌드 (Dockerfile빌드)
+$> docker-compose build  # => 오래걸림.. 처음에만 그럼
+
+# 이전 결과물 삭제 (탐색기에서 삭제해도됨.)
+$> erase shell/output
+
+# **Docker 기동(즉, 쉘이 기동됨) (-d 옵션 백그라운드로 실행)
+# 작성한 쉘은 실제 여기서 기동됨
+# 이후 쉘을 수정할 경우 해당 명령어만 하면 됨.
+$> docker-compose up -d
+
+# ** 여기서 정상동작되지 않으면 파일 포맷을 unix로 바꿔본다.=> Dockerfile 에 설정해둠.
+$> dos2unix [파일명]
+ex) dos2unix DELETE_DATA_IN_INJSE_LRN_TABLE.sh
+
+# 다시 실행할 경우
+$> docker-compose start
+
+# 중지
+$> docker-compose stop
+
+# **Docker 전체 삭제
+$> docker-compose down --rmi all --volumes --remove-orphans
+```
+
+## 결과물
+'docker-compose up -d' 실행하면 결과는 아래의 경로에 남겨짐.
+경로: statistics/shell/output
+
+※ 다시 쉘을 기동했을경우 위 경로는 반드시 삭제하고 실행한다.
+
 
 ### DockerFile
 * DockerFile
@@ -340,3 +410,17 @@ file: /AGENT_TP_TEST.jmx 을 아래와 같이 수정한다.
 ## Docker 개념
 1. windows containers vs linux containers
 - [[Windows 컨테이너] 1: Windows 컨테이너에 대한 이해](https://tech.devsisters.com/posts/intro-windows-container/)
+
+## TipTech
+1. docker-compose command 과 dockerfile cmd 어느게 우선하나? docker-compose command가 최 우선이다.
+- [DockerfileのCMD、docker-compose.yamlのcommandに、複数コマンドを複数行で書く](https://miuuuu.hatenablog.com/entry/2020/03/21/013627)
+
+2. Mysql 문자셋 설정
+- [dockerのMySQLのutf8文字コードのイメージを作る](https://daichan.club/docker/78379)
+  - [윈도우 환경에서 MySQL 한글 설정하기(UTF-8)](https://happy-inside.tistory.com/112)
+  - [예제] yian/docker-practice/shell/helloworld/docker/Dockerfile/mysqld_charset.cnf
+
+
+## 트러블슈팅(20230405)
+1. Docker-compose build 시 "no such file or directory"발생시 댕으
+- [[Docker/Python]Could not open requirements file: [Errno 2] No such file or directory: でDocker buildに失敗したときの対処法](http://pixelbeat.jp/could-not-open-requirements-file-with-docker-using-python/)
