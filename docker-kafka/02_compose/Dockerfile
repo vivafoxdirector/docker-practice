@@ -10,6 +10,7 @@ ENV LC_ALL ko_KR.UTF-8
 ENV TERM xterm
 
 COPY requirements.txt .
+COPY ./opt/IoTSampleData-v2.py /app/opt
 #WORKDIR /app/opt
 
 RUN apt-get install -y vim less
