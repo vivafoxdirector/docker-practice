@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  scala-practice:
+    build: ./docker
+    tty: true
+    volumes:
+      - ./scala-practice:/usr/src:cached
