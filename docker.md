@@ -202,6 +202,9 @@ $> cd statistics
 # **Docker 빌드 (Dockerfile빌드)
 $> docker-compose build  # => 오래걸림.. 처음에만 그럼
 
+# docker version 상위에서 아래 명령어로 가능하게 됨.
+$> docker compose build
+
 # 이전 결과물 삭제 (탐색기에서 삭제해도됨.)
 $> erase shell/output
 
@@ -288,6 +291,7 @@ http://pppurple.hatenablog.com/entry/2016/07/11/051626
 https://qiita.com/spesnova/items/8121615d4634500a331c
 https://qiita.com/hihihiroro/items/d7ceaadc9340a4dbeb8f
 * dockerfile
+https://knowledge.sakura.ad.jp/15253/
 http://pppurple.hatenablog.com/entry/2016/07/11/051626
 https://qiita.com/kooohei/items/f0352f408056861a8f74
 * dockerfile nginx
