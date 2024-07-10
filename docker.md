@@ -213,6 +213,9 @@ $> erase shell/output
 # 이후 쉘을 수정할 경우 해당 명령어만 하면 됨.
 $> docker-compose up -d
 
+# docker version 상위에서 아래 명령어로...
+$> docker compose up -d
+
 # ** 여기서 정상동작되지 않으면 파일 포맷을 unix로 바꿔본다.=> Dockerfile 에 설정해둠.
 $> dos2unix [파일명]
 ex) dos2unix DELETE_DATA_IN_INJSE_LRN_TABLE.sh
