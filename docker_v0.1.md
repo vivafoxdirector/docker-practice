@@ -238,8 +238,10 @@ $> docker-compose down --rmi all --volumes --remove-orphans
 
 
 ### DockerFile
+Dockerfile은 Docker이미지의 설계도라고 보면 된다.
+text형태의 파일에다가 이미지의 형상을 기입하고 이 파일을 이용해서 이미지를 만든다.
 * DockerFile
-```
+```sh
 # 사용 이미지 지정
 FROM centos
 # DockerHub유저 정보
